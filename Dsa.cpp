@@ -247,6 +247,88 @@ using namespace std;
 
 
 
-//                                                  121. Best Time to Buy and Sell Stock
+//                                              121. Best Time to Buy and Sell Stock
 
 
+// class Solution {
+// public:
+//     int maxProfit(vector<int>& prices) {
+
+//         int maxProfit = 0;
+//         int bestBuy = prices[0];
+//         int n = prices.size();
+
+//         for(int i = 1; i < n; i++) {
+//             if(prices[i] > bestBuy) {
+//                 maxProfit = max(maxProfit, prices[i] - bestBuy);
+//             }
+//             bestBuy = min(bestBuy, prices[i]);
+//         }
+//         return maxProfit;
+//     }
+// };
+
+
+
+
+//                                                      11. Container With Most Water
+// class Solution {
+// public:
+//     int maxArea(vector<int>& height) {
+
+//         int maxWa = 0;
+//         int n = height.size();
+
+//         for (int i = 0; i < n; i++)
+//         {
+//             int w = 0;
+//             int h = 0;
+//             for(int j = i+1; j < n; j++) {
+//                 w = j-i; // we are doing The index not the actual value 
+//                 h = min(height[i], height[j]);
+//                 maxWa = max(maxWa, w * h);
+//             }
+//         }
+//         return maxWa;
+//     }
+// };
+
+
+
+// Optimal Approach (2 pointer)
+
+// class Solution {
+// public:
+//     int maxArea(vector<int>& height) {
+
+//         int left = 0;
+//         int right = height.size()-1;
+//         int maxWa = 0;
+
+//         while (left < right)
+//         {
+//             int w = right - left;
+//             int h = min(height[left], height[right]);
+//             maxWa = max(maxWa, w * h);
+
+//             if(height[left] < height[right]) {
+//                 left++;
+//             }
+//             else {
+//                 right--;
+//             }
+            
+//         }
+//         return maxWa;
+//     }
+// };
+
+
+
+
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        
+    }
+};
