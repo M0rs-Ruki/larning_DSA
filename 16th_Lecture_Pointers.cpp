@@ -158,15 +158,16 @@ using namespace std;
 // }
 
 
-int main() {
+// int main() {
 
-    int arr[] = {10, 20, 30, 40}; 
-    int *ptr = arr;
+//     int arr[] = {10, 20, 30, 40}; 
+//     int *ptr = arr;
     
-    cout << *(ptr + 1) << endl; 
-    cout << *(ptr + 3) << endl; 
-    ptr++;
-    cout << *ptr << endl;
+//     cout << *(ptr + 1) << endl; 
+//     cout << *(ptr + 3) << endl; 
+//     ptr++;
+//     cout << *ptr << endl;
 
-    return 0;
-}
+//     return 0;
+// }
+
