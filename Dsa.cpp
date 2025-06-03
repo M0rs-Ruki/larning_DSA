@@ -438,36 +438,54 @@ using namespace std;
 //                                               33. Search in Rotated Sorted Array
 
 
-class Solution {
-public:
-    int search(vector<int>& nums, int target) {
+// class Solution {
+// public:
+//     int search(vector<int>& nums, int target) {
         
-        int n = nums.size();
-        int st = 0;
-        int end = n-1;
+//         int n = nums.size();
+//         int st = 0;
+//         int end = n-1;
         
-        while (st <= end){
+//         while (st <= end){
 
-            int mid = st +(end - st) / 2;
+//             int mid = st +(end - st) / 2;
             
-            if(nums[mid] == target) {
-                return mid;
-            }
+//             if(nums[mid] == target) {
+//                 return mid;
+//             }
             
-            if(nums[st] <= nums[mid]){ // left shorted
-                if(nums[st] <= target &&  target <= nums[mid]){
-                    end = mid-1;
-                } else { 
-                    st = mid+1;
-                }
-            } else {  // right shorted
-                if(nums[mid] <= target && target <= nums[end]){
-                    st = mid+1;
-                } else {
-                    end = mid-1;
-                }
-            }
-        }
-        return -1;
-    }
-};
+//             if(nums[st] <= nums[mid]){ // left shorted
+//                 if(nums[st] <= target &&  target <= nums[mid]){
+//                     end = mid-1;
+//                 } else { 
+//                     st = mid+1;
+//                 }
+//             } else {  // right shorted
+//                 if(nums[mid] <= target && target <= nums[end]){
+//                     st = mid+1;
+//                 } else {
+//                     end = mid-1;
+//                 }
+//             }
+//         }
+//         return -1;
+//     }
+// };
+
+
+//                                        26. Remove Duplicates from Sorted Array
+
+// class Solution {
+// public:
+//     int removeDuplicates(vector<int>& num) {
+
+//         int n = num.size();
+//         int val = 0;
+//         for (int i = 0; i < n; i++) {
+//             if(num[val] != num[i]) {
+//                 num[++val] = num[i];
+//             }
+//         }
+//         return val+1;
+//     }
+// };
