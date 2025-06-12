@@ -232,5 +232,70 @@ using namespace std;
 //     return 0;
 // }
 
+// Algorithms
+// Sorting
+// sort(arr, arr+n)
+// sort(arr, arr+n, greater<int>())
+// sort(v.begin(), v,end())
+// Reverse
+// reverse(v.begin(), v.end())
+// Next Permutation
+// next_permutation(v.begin(), v.end())
+// swap, min, max
+// Max & Min Element
+// max_element(v.begin(), v.end())
+// min_element(v.begin(), v.end())
+// Binary Search
+// binary_search(v.begin(), v.end(), target)
+// Count Set Bits
+// _builtin_popcount()
+// builtin_popcountl()
+// builtin_popcountil()
+
+
+int main() {
+    vector<int> v = {1, 2, 3, 4, 5};
+    cout << "Sort" << endl;
+    sort(v.begin(), v.end());
+    for(int val : v) {
+        cout << val << " ";
+    }
+    cout << endl;
+    cout << "Reverse Sort" << endl;
+    sort(v.begin(), v.end(), greater<int>());
+    for(int val : v) {
+        cout << val << " ";
+    }
+    cout << endl;
+    cout << "Reverse" << endl;
+    reverse(v.begin(), v.end());
+    for(int val : v) {
+        cout << val << " ";
+    }
+    cout << endl;
+    cout << "Next Permutation" << endl;
+    next_permutation(v.begin(), v.end());
+    for(int val : v) {
+        cout << val << " ";
+    }
+    cout << endl;
+    cout << "Swap" << endl;
+    swap(v[0], v[1]);
+    for(int val : v) {
+        cout << val << " ";
+    }
+    cout << endl;
+    cout << "Min: " << min(1, 2) << endl;
+    cout << "Max: " << max(1, 2) << endl;
+    cout << "Max Element: " << *max_element(v.begin(), v.end()) << endl;
+    cout << "Min Element: " << *min_element(v.begin(), v.end()) << endl;
+    cout << "Binary Search: " << binary_search(v.begin(), v.end(), 3) << endl;
+    cout << "Count Set Bits: " << __builtin_popcount(10) << endl;
+    cout << "Count Set Bits: " << __builtin_popcountl(10) << endl;
+    cout << "Count Set Bits: " << __builtin_popcountll(10) << endl;
+    
+
+    return 0;
+}
 
 
