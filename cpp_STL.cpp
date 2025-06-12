@@ -189,3 +189,48 @@ using namespace std;
 //     return 0;
 // }
 
+
+
+// // Set
+// // set<int> s;
+// // insert, emplace
+// // count
+// // erase
+// // find
+// // size, empty, erase
+// #include <set>
+
+
+// int main() {
+//     set<int> s;
+//     s.insert(1);
+//     s.insert(2);
+//     s.insert(3);
+//     s.insert(4);
+//     s.insert(5);
+//     s.insert(6);
+//     cout << "Size: " << s.size() << endl;
+//     cout << "Empty: " << s.empty() << endl;
+//     cout << "Count: " << s.count(1) << endl;
+//     cout << "Count: " << s.count(7) << endl;
+//     s.erase(1);
+//     cout << "Size: " << s.size() << endl;
+//     cout << "Empty: " << s.empty() << endl;
+//     cout << "Count: " << s.count(1) << endl;
+//     cout << "Count: " << s.count(7) << endl;
+//     for(auto p: s) {
+//         cout << p << " ";
+//     }
+//     cout << endl;
+//     if(s.find(1) != s.end()) {
+//         cout << "Found" << endl;
+//     }
+//     else {
+//         cout << "Not Found" << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
