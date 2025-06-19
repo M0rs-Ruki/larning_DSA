@@ -41,4 +41,6 @@ Armstrong number because 153 = 1^3 + 5^3 + 3^3.
 
 
 (((GCD)))
+GCD => Greatest Common Divisor
+HCF => High Common Factorial 
 
