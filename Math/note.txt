@@ -46,3 +46,9 @@ HCF => High Common Factorial
 
 (((Reverse a num)))
 // 7. Reverse Integer
+
+
+(((((Modular Arithmetics)))))
+(x + y) % m = x%m + y%m
+(x - y) % m = x%m - y%m
+(x . y) % m = x%m . y%m
