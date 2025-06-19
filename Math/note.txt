@@ -1,0 +1,44 @@
+
+// Math
+
+Prime Logic & Sieve of Eratosthenes
+GCD with Euclid's Algorithm & LCM
+Digits in a number
+Reverse a num
+Check Palindrome
+Armstrong Logic
+Modular Arithmetics
+Fast Exponentiation
+
+
+
+((((Prime numbers))))
+n => [2 ot root n ]
+n = 16 => [2 to 4]
+Sieve of Eratosthenes
+
+
+
+((((Digits in a number))))
+n = 2,4,5,6
+lets we have to do the 
+sum of the Digits
+Multiply of the Digits
+or etc...
+while (n > 0) {
+    int digit = n % 10;
+    ans.push_back(digit);
+    n /= 10;
+}
+
+
+
+((((Armstrong Logic))))
+An Armstrong number is a number that is equal to 
+the sum of its own digits each raised to the power 
+of the number of digits. For example, 153 is an 
+Armstrong number because 153 = 1^3 + 5^3 + 3^3. 
+
+
+(((GCD)))
+
