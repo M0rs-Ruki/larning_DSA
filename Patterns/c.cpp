@@ -41,11 +41,11 @@ using namespace std;
 
 int main() { 
     int in = 1;
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; in < 10; j++) {
-            cout << in;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << in << " ";
             in++;
-        };
+        }
         cout << endl;
     }
     return 0;
